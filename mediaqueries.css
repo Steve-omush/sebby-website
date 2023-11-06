@@ -1,0 +1,44 @@
+/* Hamburger menu icon */
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* Media query for menu */
+/* only for devices whose width is less than 800px */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: black;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav .nav-list li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav .nav-list li a {
+        color: #EAA222;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+}
+
+/* media query for less than 600 screen size */
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4, .col-5, .col-2-1, .col-3-1 {
+        flex-basis: 100%;
+    }
+}

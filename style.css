@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#3B3C35, #EAA222);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NavBar Logo */
+.img-logo {
+    width:6rem;
+    height: 4rem;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.nav-tag  {
+    flex: 1;
+    text-align: right;
+}
+.nav-list {
+    display: inline-block;
+    list-style: none;
+}
+.nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    color: black;
+}
+.NavBar-section {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* The first two images */
+/* CSS */
+.rows {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ 
+}
+  
+  .col-2-1 {
+    flex-basis: 50%;
+    flex: 1;
+    text-align: center; /* Optional, for centering images within columns */
+  }
+  
+  .col-2-1 img {
+    width: 500px; /* Set a fixed width (adjust as needed) */
+    height: 300px; /* Set a fixed height (adjust as needed) */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+ }
+ .row-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+ .col-3-1 {
+    flex-basis: 30%;
+    flex: 1;
+    text-align: center; /* Optional, for centering images within columns */
+ }
+ .col-3-1 img {
+    width: 300px; /* Set a fixed width (adjust as needed) */
+    height: 300px; /* Set a fixed height (adjust as needed) */
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+  }
+
+
+  /*The previous code  */
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn {
+    display: inline-block;
+    background: black;
+    color: #EAA222;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:#FBE7A1;
+}
+.header {
+    /* background: radial-gradient(#EAA222, #3B3C35 ); */
+    /* background: radial-gradient(#3B3C35, #EAA222);   come back and uncomment it */
+}
+.header .row {
+    margin-top: 70px;
+}
+/* Categories Section */
+.categories {
+    margin: 70px 0;
+}
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img {
+    width: 100%;
+}
+.categories-section {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img {
+    width: 100%;
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+.title::after{
+    content: '';
+    background: black;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: black;
+    font-weight: normal;
+}
+.col-4 p {
+    font-size: 14px;
+}
+.rating .fas {
+    color: black;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+/* Offer Section */
+.offers {
+    /* background: radial-gradient(#3B3C35, #EAA222);  come back and uncomment it */
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img {
+    padding: 50px;
+}
+small {
+    color: black;;
+}
+/* Testimonial Section */
+.testimonial {
+    padding-top: 100px;
+}
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left {
+    font-size: 34px;
+}
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+}
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    font-size: 16px;
+}
+/* Brands section */
+.brands {
+    margin: 100px auto;
+}
+.col-5 {
+    width: 200px;
+}
+.col-5 img {
+    width: 160px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+/* Footer Section */
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p {
+    color: #8a8a8a;
+}
+.footer h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-col-2, .footer-col-3{
+    min-width: 500px;
+    margin-bottom: 20px;
+}
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3 {
+    flex-basis: 40%;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+.footer hr {
+    border: none;
+    background: #8a8a8a;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright {
+    text-align: center;
+}
+.footer-col-3 ul li a {
+    color: white;
+}
+
+
+/* Icons logo */
+.fab, .fas {
+    font-size: 24px;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
+    color:#EAA222;
+    cursor: pointer;
+}
